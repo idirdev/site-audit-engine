@@ -1,0 +1,33 @@
+{
+  "name": "site-audit-engine",
+  "version": "1.0.0",
+  "description": "Audit any website for SEO, performance, accessibility, and security issues from the command line",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sae": "dist/cli/index.js",
+    "site-audit": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "lint": "eslint src/"
+  },
+  "keywords": ["seo", "audit", "accessibility", "performance", "security", "website", "cli"],
+  "author": "idirdev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
+    "cli-table3": "^0.6.5",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.15.0"
+  }
+}
