@@ -124,3 +124,33 @@ src/
 ## License
 
 MIT — free to use, modify, and distribute.
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+site-audit-engine est un outil CLI pour auditer n'importe quel site web en matière de SEO, performance, accessibilité, sécurité et qualité HTML. Une seule commande suffit pour obtenir un rapport complet et détaillé.
+
+### Installation
+```bash
+npm install -g site-audit-engine
+
+# Ou exécution directe
+npx site-audit-engine scan https://exemple.com
+```
+
+### Utilisation
+```bash
+# Audit complet
+site-audit scan https://exemple.com
+
+# Export en JSON
+site-audit scan https://exemple.com --output rapport.json
+
+# Audit d'une seule catégorie
+site-audit scan https://exemple.com --category seo
+site-audit scan https://exemple.com --category security
+```
+
+Consultez la documentation anglaise ci-dessus pour la liste complète des vérifications effectuées (SEO, performance, accessibilité, sécurité, HTML) et l'utilisation du SDK.
