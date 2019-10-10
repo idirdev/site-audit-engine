@@ -36,6 +36,22 @@ export interface AuditResult {
   headers: HeaderInfo;
 }
 
+export interface MultiPageAuditResult {
+  startUrl: string;
+  timestamp: string;
+  totalDurationMs: number;
+  pageCount: number;
+  pages: AuditResult[];
+  summary: {
+    totalIssues: number;
+    criticalCount: number;
+    warningCount: number;
+    infoCount: number;
+    avgScore: CategoryScore;
+    urlsCrawled: string[];
+  };
+}
+
 export interface CategoryScore {
   overall: number;
   seo: number;
@@ -101,4 +117,5 @@ export interface AuditConfig {
   userAgent: string;
   checkLinks: boolean;
   maxDepth: number;
+  maxPages: number;
 }
