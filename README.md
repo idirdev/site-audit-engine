@@ -154,3 +154,4 @@ site-audit scan https://exemple.com --category security
 ```
 
 Consultez la documentation anglaise ci-dessus pour la liste complète des vérifications effectuées (SEO, performance, accessibilité, sécurité, HTML) et l'utilisation du SDK.
+
